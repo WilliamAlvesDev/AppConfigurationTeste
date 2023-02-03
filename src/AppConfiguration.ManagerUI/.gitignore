@@ -1,0 +1,3 @@
+Assets/*.js
+Assets/*.json
+/node_modules

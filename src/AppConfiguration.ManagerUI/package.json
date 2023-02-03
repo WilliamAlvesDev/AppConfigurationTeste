@@ -1,0 +1,39 @@
+{
+  "name": "appconfiguration.ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dll": "webpack-cli --mode production --config ./build/webpack.dll.js",
+    "buildcss:prod": "uglifycss ./assets/appconfiguration_ui.css --output ./assets/appconfiguration_ui-min.css",
+    "build:prod": "webpack-cli --mode production --config ./build/webpack.config.js",
+    "build:dev": "webpack-cli --mode development --devtool eval-source-map --config ./build/webpack.config.js",
+    "build": "npm run build:dll && npm run build:prod"
+  },
+  "author": "App Configuration",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-json-view": "1.19.1",
+    "react-loading-skeleton": "^2.2.0",
+    "react-query": "^3.5.1",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.49",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router-dom": "5.1.5",
+    "awesome-typescript-loader": "5.2.1",
+    "css-loader": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "typescript": "4.0.2",
+    "uglifycss": "0.0.29",
+    "url-loader": "4.1.0",
+    "webpack": "4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

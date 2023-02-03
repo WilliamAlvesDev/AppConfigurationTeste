@@ -1,0 +1,9 @@
+require("axios");
+require("react");
+require("react-dom");
+require("react-query");
+require("react-router-dom");
+require("react-json-view");
+require("@material-ui/core");
+require("@material-ui/icons");
+require("react-loading-skeleton");
